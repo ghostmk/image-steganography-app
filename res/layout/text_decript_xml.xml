@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/dec_text_key_edt"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:hint="Enter secrete key here"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/dec_text_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dec_text_key_edt"
+        android:layout_below="@+id/dec_text_key_edt"
+        android:layout_marginTop="62dp"
+        android:text="secrete message text"
+        />
+
+    <Button
+        android:id="@+id/dec_text_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dec_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Decript" />
+
+</RelativeLayout>

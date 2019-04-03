@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/encript_browse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Browse file" />
+
+    <ImageView
+        android:id="@+id/enc_brows_image"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/encript_browse_btn"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/enc_img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enc_brows_image"
+        android:layout_marginTop="10dp"
+        android:text="enc image name" />
+
+    <EditText
+        android:id="@+id/enc_txtcode_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enc_img_name"
+        android:layout_marginTop="10dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/enc_savecode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/enc_txtcode_edt"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Save Code" />
+
+    <Button
+        android:id="@+id/enc_sendimg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enc_savecode_btn"
+        android:layout_alignBottom="@+id/enc_savecode_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="Send Image" />
+
+</RelativeLayout>

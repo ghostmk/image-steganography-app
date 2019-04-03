@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/decript_browse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Browse file" />
+
+    <ImageView
+        android:id="@+id/dec_brows_image"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/decript_browse_btn"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/dec_img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dec_brows_image"
+        android:layout_marginTop="20dp"
+        android:text="Dec image name" />
+
+    <EditText
+        android:id="@+id/dec_txtcode_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dec_img_name"
+        android:layout_marginTop="15dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dec_getcode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dec_txtcode_edt"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Get Code" />
+
+    <Button
+        android:id="@+id/dec_gettext_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dec_getcode_btn"
+        android:layout_alignBottom="@+id/dec_getcode_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="Get Text" />
+
+</RelativeLayout>
